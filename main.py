@@ -14,6 +14,7 @@ class VideoClubManagementSystem:
         # Conectarse a la base de datos
         self.con = sqlite3.connect("database.db")
         self.cursor = self.con.cursor()
+        self.create_table()
 
     def menu(self):
         while True:  # Mostrar un menú que se repite hasta que el usuario decida salir
